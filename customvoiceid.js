@@ -15,7 +15,7 @@ request(options, function (error, response) {
 	for(voice in json_obj.voices)
 	{
 		_voice = json_obj.voices[voice];
-		if(_voice.category === 'custom')
+		if(_voice.category === 'cloned')
 			console.log('voice name: ' + _voice.name + ', voice ID: ' + _voice.voice_id);
 	}
 });
